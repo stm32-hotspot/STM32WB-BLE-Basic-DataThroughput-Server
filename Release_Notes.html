@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Release Notes for STM32WB Firmware Package</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <link rel="stylesheet" href="_htmresc/mini-st_2020.css" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <link rel="icon" type="image/x-icon" href="_htmresc/favicon.png" />
+</head>
+<body>
+<div class="row">
+<div class="col-sm-12 col-lg-4">
+<center>
+<h1 id="release-notes-for">Release Notes for</h1>
+<h1 id="BLE_Basic_DataThroughput_Server"><mark>BLE_Basic_DataThroughput_Server Example</mark></h1>
+<p>Copyright © 2022 STMicroelectronics<br />
+</p>
+<a href="https://www.st.com" class="logo"><img src="_htmresc/st_logo_2020.png" alt="ST logo" /></a>
+</center>
+<h1 id="purpose">Purpose</h1>
+<p>BLE_Basic_DataThroughput_Server example demonstrates how to use data throughput via Notifications from GATT Server to GATT Client using the BLE component.
+This is similar functionliaty as the BLE_DataThroughput example from STM32CubeWB, only this example includes only the basic user code for performing the 
+data transfers to the Client via Notifications (does not support Client functionality). It also includes all the configuration per section 7.6.8 of 
+AN5289 Rev. 6 to maximize data throughput. </p>
+<p><strong>BLE_Basic_DataThroughput_Server example is being delivered as-is, not necessarily supported by ST.</mark></strong></p>
+</ul></li>
+</ul>
+<p>This example includes the HAL and LL drivers provided in the <a href="https://github.com/STMicroelectronics/STM32CubeWB/releases/tag/v1.13.1">STM32CubeWB_v1.13.1</a> package. For further information about these components, see official package. </p>
+
+<ul>
+</div>
+<div class="col-sm-12 col-lg-8">
+<h1 id="update-history">Update History</h1>
+<div class="collapse">
+<input type="checkbox" id="collapse-section2" checked aria-hidden="true"> <label for="collapse-section2" aria-hidden="true"><strong>V1.0.0 / 23-February-2022</strong></label>
+<div>
+<h2 id="main-changes">Main Changes</h2>
+<h3 id="initial-release-of-ble-basic-datathroughput-server-example">Initial release of <strong>BLE_Basic_DataThroughput_Server</strong> Example </h3>
+<p>In the BLE_Basic_DataThroughput_Server example, the project is generated with the STM32CubeMX tool to initialize the system, peripherals and middleware stacks. User can open the provided ioc file in STM32CubeMX to modify the settings and add additional peripherals, to customize his final application, or generate project for different compiler/toolchain; i.e. MDK-ARM, STM32CubeIDE.</p>
+<h2 id="components">Components</h2>
+<p>Refer to Release Notes of offical STM32CubeWB v1.13.1 package for details of Compoents (Drivers, Cortex-M CMSIS, STM32 CMSIS, STMWBxx_HAL_Driver, STM32WBxx_Nucleo, Middlewares, Utilities)</p></ul></li>
+</tr>
+</tbody>
+</table>
+<h2 id="known-limitations">Known Limitations</h2>
+<ul>
+<li> None </li>
+</ul>
+<h2 id="development-toolchains-and-compilers">Development Toolchains and Compilers</h2>
+<ul>
+<li>IAR Embedded Workbench for ARM (EWARM) toolchain V9.20.x + ST-Link</li>
+</ul>
+<h2 id="supported-devices-and-boards">Supported Devices and Boards</h2>
+<ul>
+<li>STM32WB55xx devices</li>
+<li>NUCLEO-WB55RG &amp; ecosystem board - Nucleo kit RevC/D (MB1355)</li>
+</ul>
+<h2 id="dependencies">Dependencies</h2>
+<ul>
+<li>STM32CubeMX 6.4.0</li>
+</ul>
+</div>
+</div>
+</footer>
+</body>
+</html>
