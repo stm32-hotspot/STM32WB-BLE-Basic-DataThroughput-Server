@@ -894,10 +894,10 @@ static void LinkConfiguration(void)
 
   /* Set Connection Interval */
   APP_DBG_MSG("Set Connection Interval \n");  
-  uint16_t interval_min = CONN_P(30.0);   // optimal for iphone XR
-  uint16_t interval_max = CONN_P(30.0);   
-//  uint16_t interval_min = CONN_P(48.75);  // opimtal for Android Samsung Galaxy S10
-//  uint16_t interval_max = CONN_P(48.75);    
+//  uint16_t interval_min = CONN_P(30.0);   // optimal for iphone XR
+//  uint16_t interval_max = CONN_P(30.0);   
+  uint16_t interval_min = CONN_P(48.75);  // opimtal for Android Samsung Galaxy S10
+  uint16_t interval_max = CONN_P(48.75);    
   uint16_t slave_latency = L2CAP_SLAVE_LATENCY;
   uint16_t timeout_multiplier = L2CAP_TIMEOUT_MULTIPLIER;
   status = aci_l2cap_connection_parameter_update_req(BleApplicationContext.BleApplicationContext_legacy.connectionHandle,

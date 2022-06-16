@@ -84,46 +84,7 @@ Refer to UM2237 to learn how to use/install STM32CubeProgrammer.
 Refer to /Projects/STM32_Copro_Wireless_Binaries/ReleaseNote.html for the detailed procedure to change the
 Wireless Coprocessor binary.  
 
-In order to make the program work, you must do the following:
- - Open your preferred toolchain (IAR EWARM or STM32CubeIDE) 
- - Rebuild all files and load your image into target memory
-
-One NUCLEO-WB55RG board is used, and it is configured as the GAP peripheral and GATT Server.
-It supports Data transfer service with a transmission characteristic that supports notification.
-Open a VT100 terminal on Peripheral side (ST Link Com Port, @115200 bauds).
-At startup, the connection is established from a iOS or Android Smartphone Central Device (GATT Client) 
-through an app like ST BLE Toolbox app.
- - The peripheral (Gap Peripheral) device starts advertising.
- - The Smartphone (Gap Cental) device scans and automatically connects to the peripheral. 
- - The client starts to search the data transfer service and characteristic.
- - The client enables the notification of the transmission characteristic.
-On server side, the notification is started when the SW1 button is pushed (blue led is ON), 
-The notification can be started and stopped from both sides.
-On the Smartphone client receiving the current notification, the number of bytes can be logged.
-
-Instead of connecting it to a Smartphone, it is also possible to connect it to another NUCLEO-WB55RG 
-board, acting as the GATT Client. The GATT Client example is a different example and can be found in the 
-STM32-Hotspot github as well (BLE_Basic_DataThroughput_Client). 
-In this case, two NUCLEO-WB55RG boards are used, one central and one peripheral. 
-They both support a Data transfer service with a transmission characteristic that supports notification.
-One board is defined as GAP peripheral, the other board is defined as GAP central.
-Open a VT100 terminal on Central and Peripheral side (ST Link Com Port, @115200 bauds).
-At startup the connection is established.
- - The peripheral device starts advertising.
- - The central device scans when SW1 is pressed, and automatically connects to the peripheral. 
- - The client on each device starts to search the data transfer service and characteristic.
- - The client enables the notification of the transmission characteristic.
-On server side, the notification is started when the SW1 button is pushed (blue led is ON), 
-it stops when SW1 is pushed again (blue led is OFF).
-The notification can be started and stopped from both sides.
-On the client terminal receiving the current notification, the number of bytes per second is displayed.
-
-On the NUCLEO-WB55RG board used as peripheral.
-This board can be connected with a smartphone running an application like ST BLE Toolbox.
-Start a scan and choose SERVER board to connect.
-SW1 starts the notification data.
-SW2 changes the PHY (1M or 2M). 
-
+See README.md in the example root directory for step-by-step instructions.  
  
  * <h3><center>&copy; COPYRIGHT STMicroelectronics</center></h3>
  */
